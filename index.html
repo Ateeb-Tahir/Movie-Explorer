@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+  <header class="header">
+    <h1>🎬 Movie Explorer</h1>
+    <button id="toggle-dark">Toggle Dark Mode</button>
+  </header>
+
+  <
+  <div class="search-bar">
+    <input
+      id="search-input"
+      type="text"
+      placeholder="Search for a movie..."
+    />
+  </div>
+
+  <div id="spinner" class="spinner hidden">
+    <div class="spinner-icon"></div>
+    <p>Loading...</p>
+  </div>
+
+  <!-- Genre Filters & Sort -->
+  <div class="filters-wrapper">
+    <div id="genre-filters" class="genre-filters">
+    </div>
+
+    <div class="sort-rating">
+      <label for="sort-select">Sort by:</label>
+      <select id="sort-select">
+        <option value="default">Default</option>
+        <option value="desc">Highest → Lowest</option>
+        <option value="asc">Lowest → Highest</option>
+      </select>
+    </div>
+  </div>
+
+  
+  <main class="main-content">
+    <h2>Popular Movies</h2>
+    <div id="movie-grid" class="movie-grid"></div>
+
+   
+    <div class="load-more-wrapper">
+      <button id="load-more">Load More</button>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
+3
