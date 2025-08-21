@@ -7,20 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
- 
   <header class="header">
     <h1>🎬 Movie Explorer</h1>
     <button id="toggle-dark">Toggle Dark Mode</button>
   </header>
-
-  <
+  
   <div class="search-bar">
     <input
       id="search-input"
       type="text"
       placeholder="Search for a movie..."
     />
+     <div class="search-suggestions" id="search-suggestions"></div>
   </div>
 
   <div id="spinner" class="spinner hidden">
@@ -32,6 +30,7 @@
   <div class="filters-wrapper">
     <div id="genre-filters" class="genre-filters">
     </div>
+
 
     <div class="sort-rating">
       <label for="sort-select">Sort by:</label>
@@ -59,4 +58,3 @@
 
 </body>
 </html>
-3
