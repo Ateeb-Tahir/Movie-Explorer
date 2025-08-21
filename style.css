@@ -69,6 +69,39 @@ body.dark .search-bar input {
   color: white;
 }
 
+body.dark .search-suggestions {
+  background-color: #374151;
+  color: white;
+}
+
+.search-suggestions {
+ position: relative;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #1e293b; /* Dark bluish background */
+  border: 1px solid #475569; /* Subtle border */
+  border-radius: 8px;
+  margin-top: 5px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: none; /* hidden by default */
+}
+
+.search-suggestions div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.search-suggestions div:hover {
+  background-color: #334155; /* highlight on hover */
+}
+.search-suggestions {
+  display: none; /* hidden by default */
+}
+
 /* === Genre Filters === */
 .genre-filters {
   display: flex;
@@ -334,6 +367,7 @@ body.dark .movie-card {
   color: white;
   border: 1px solid #555;
 }
+
 
 
 
